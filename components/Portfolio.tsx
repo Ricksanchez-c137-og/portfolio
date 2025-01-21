@@ -151,9 +151,10 @@ function Experience() {
       company: "Salman&Co pertolum services",
       period: "2019 - 2022",
       responsibilities: [
-        "Lead penetration testing engagements for Fortune 500 clients",
+        "Manage and secure the company's IT infrastructure, including servers, workstations, and network devices.",
         "Develop and implement security strategies for cloud environments",
         "Conduct security awareness training for executive teams",
+        "Develop and implement security protocols to protect company data and systems against cyber threats."
       ],
     },
     {
