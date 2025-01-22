@@ -147,13 +147,15 @@ function Certifications() {
 function Experience() {
   const experiences = [
     {
-      title: "Cybersecurity Consultant",
-      company: "Salman&Co pertolum services",
+      title: "IT Administrator & Cybersecurity Consultant",
+      company: "Salman & Co Petroleum Services",
       period: "2019 - 2022",
       responsibilities: [
-        "Lead penetration testing engagements for Fortune 500 clients",
-        "Develop and implement security strategies for cloud environments",
-        "Conduct security awareness training for executive teams",
+        "Managed and secured the company's IT infrastructure, including servers, workstations, and network devices.",
+        "Developed and implemented security protocols to protect company data and systems against cyber threats.",
+        "Monitored and maintained network performance to ensure uptime and efficiency.",
+        "Provided cybersecurity training and best practices guidance to employees and management.",
+        "Assessed and mitigated vulnerabilities through regular audits and penetration tests.",
       ],
     },
     {
@@ -161,7 +163,10 @@ function Experience() {
       company: "Abu Dhabi University",
       period: "2021 - present",
       responsibilities: [
-        "Studied Cybersecurty Fundementals and advanced topics Participated in CTF competitions and security research projects",
+        "Studied cybersecurity fundamentals and advanced topics, including network security, incident response, and ethical hacking.",
+        "Participated in Capture The Flag (CTF) competitions, showcasing problem-solving and technical skills.",
+        "Engaged in security research projects focused on threat analysis and mitigation strategies.",
+        "Collaborated with peers to develop practical solutions for simulated security challenges.",
       ],
     },
   ];
@@ -174,12 +179,16 @@ function Experience() {
           <Card key={index}>
             <CardHeader>
               <CardTitle>{exp.title}</CardTitle>
-              <p className="text-sm text-muted-foreground">{exp.company} | {exp.period}</p>
+              <p className="text-sm text-muted-foreground">
+                {exp.company} | {exp.period}
+              </p>
             </CardHeader>
             <CardContent>
               <ul className="list-disc list-inside space-y-1">
                 {exp.responsibilities.map((resp, idx) => (
-                  <li key={idx} className="text-sm text-muted-foreground">{resp}</li>
+                  <li key={idx} className="text-sm text-muted-foreground">
+                    {resp}
+                  </li>
                 ))}
               </ul>
             </CardContent>
@@ -187,32 +196,62 @@ function Experience() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
 function Projects() {
   const projects = [
     {
       title: "Advanced Persistent Threat (APT) Simulation",
-      description: "Developed and executed a comprehensive APT simulation to test and improve the security posture of a Fortune 500 company.",
+      description: "Designed and executed a comprehensive APT simulation lab to evaluate and enhance defensive measures for enterprise-level networks.",
       tags: ["Red Team", "APT", "Threat Simulation"],
     },
     {
       title: "Custom Vulnerability Scanner",
-      description: "Created a specialized vulnerability scanner tailored for IoT devices, identifying critical security flaws in smart home systems.",
-      tags: ["IoT Security", "Vulnerability Assessment", "Python"],
+      description: "Developed a tailored vulnerability scanner for my ethical hacking lab to identify and remediate security flaws in web applications and network services.",
+      tags: ["Networking", "Vulnerability Assessment", "Python","Web Security"],
     },
     {
       title: "CTF Challenge Development",
-      description: "Designed and implemented complex Capture The Flag (CTF) challenges for international cybersecurity competitions.",
+      description: "Created intricate Capture The Flag (CTF) challenges for global cybersecurity competitions, focusing on real-world exploitation scenarios.",
       tags: ["CTF", "Challenge Design", "Web Security"],
     },
     {
       title: "Security Awareness Training Platform",
-      description: "Developed an interactive, gamified security awareness training platform for corporate clients, significantly reducing phishing susceptibility.",
+      description: "Built an engaging, gamified security awareness training platform that significantly reduced phishing and social engineering risks for corporate teams.",
       tags: ["Security Awareness", "E-learning", "Gamification"],
     },
-  ]
+    {
+      title: "DevOps Automation Lab",
+      description: "Set up a lab environment to automate deployment pipelines and monitor CI/CD workflows, focusing on containerized applications using Kubernetes and Docker.",
+      tags: ["DevOps", "Kubernetes", "CI/CD"],
+    },
+    {
+      title: "Full SOC (Security Operations Center) Lab",
+      description: "Designed and implemented a SOC lab with tools like Splunk, WAZUH, and Suricata for real-time monitoring and incident response training.",
+      tags: ["SOC", "SIEM", "Incident Response"],
+    },
+    {
+      title: "Web Exploitation Lab",
+      description: "Created an environment to practice and exploit web vulnerabilities, including XSS, SQLi, and SSTI, to train professionals in secure coding practices.",
+      tags: ["Web Security", "Exploitation", "OWASP"],
+    },
+    {
+      title: "Malware Analysis Lab",
+      description: "Built a sandbox environment for dynamic and static malware analysis, enabling the study of advanced obfuscation and payload techniques.",
+      tags: ["Malware Analysis", "Sandboxing", "Reverse Engineering"],
+    },
+    {
+      title: "Network Penetration Testing Toolkit",
+      description: "Developed a toolkit with automated scripts for network scanning, vulnerability exploitation, and privilege escalation in diverse network environments.",
+      tags: ["Penetration Testing", "Network Security", "Automation"],
+    },
+    {
+      title: "Corporate Email Security Enhancements",
+      description: "Implemented robust email security measures, including SPF, DKIM, and DMARC, to prevent phishing and email spoofing for a small enterprise.",
+      tags: ["Email Security", "Phishing Prevention", "System Administration"],
+    },
+  ];
 
   return (
     <section>
@@ -237,8 +276,9 @@ function Projects() {
         ))}
       </div>
     </section>
-  )
+  );
 }
+
 
 function Skills() {
   type SkillCategory = "Technical" | "Tools" | "Languages" | "Soft Skills";
