@@ -209,7 +209,7 @@ function Projects() {
     {
       title: "Custom Vulnerability Scanner",
       description: "Developed a tailored vulnerability scanner for my ethical hacking lab to identify and remediate security flaws in web applications and network services.",
-      tags: ["Networking", "Vulnerability Assessment", "Python"],
+      tags: ["Networking", "Vulnerability Assessment", "Python","Web Security"],
     },
     {
       title: "CTF Challenge Development",
