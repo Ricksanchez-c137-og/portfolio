@@ -3,8 +3,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Portfolio from "@/components/Portfolio"
 
 export const metadata: Metadata = {
-  title: 'John Doe - Cybersecurity Professional',
-  description: 'Portfolio of John Doe, an experienced cybersecurity professional specializing in ethical hacking, penetration testing, and security research.',
+  title: 'Mohamed Nofal- Cybersecurity Professional',
+  description: 'Portfolio of Mohamed Nofal, an experienced cybersecurity professional specializing in ethical hacking, penetration testing, and security research.',
 }
 
 export default function Home() {
