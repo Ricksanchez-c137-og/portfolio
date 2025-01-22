@@ -208,8 +208,8 @@ function Projects() {
     },
     {
       title: "Custom Vulnerability Scanner",
-      description: "Developed a tailored vulnerability scanner for IoT devices, uncovering critical security flaws in smart home ecosystems.",
-      tags: ["IoT Security", "Vulnerability Assessment", "Python"],
+      description: "Developed a tailored vulnerability scanner for my ethical hacking lab to identify and remediate security flaws in web applications and network services.",
+      tags: ["Networking", "Vulnerability Assessment", "Python"],
     },
     {
       title: "CTF Challenge Development",
